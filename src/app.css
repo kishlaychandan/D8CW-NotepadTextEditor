@@ -1,3 +1,85 @@
 .temp:hover {
     cursor: pointer;
 }
+.app{
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+    /* padding: 0.5rem; */
+    background-color: purple;
+}
+.app .left{
+   min-width: 20%;
+   height: 100vh;
+   background-color: gray;
+   border-radius: 0.8rem;
+}
+.app .left .add{
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: orangered;
+    border-radius: 0.5rem;
+    border: 2px solid yellow;
+
+}
+.app .left .add:hover{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+.card{
+    /* background-color: blue; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+    
+}
+hr{
+    width: 100%;
+
+}
+.card .title{
+    display: flex;
+    padding: 0.7rem 1.2rem;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: rgb(8, 24, 83);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    button{
+        background-color: aquamarine;
+        border: 2px solid aqua;
+        border-radius: 0.5rem;
+        padding: 1rem 0.8rem;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: white;
+        color: red;
+        cursor: pointer;
+    }
+}
+.right{
+    width: 85%;
+    background-color: black;
+    height: 100vh;
+    border-radius: 0.8rem;
+}
+
+@media screen and (max-width:1200px) {
+    .card .title{
+        font-size: 0.8rem;
+    }   
+}
+@media screen and (max-width:1000px) {
+    .card .title{
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+}

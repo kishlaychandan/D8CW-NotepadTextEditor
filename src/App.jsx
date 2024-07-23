@@ -28,9 +28,9 @@ function App() {
   };
 
   return (
-    <div style={{ display: "flex", gap: "10px" }}>
-      <div>
-        <button onClick={addNote}>Add Note</button>
+    <div className="app" style={{ display: "flex", gap: "10px" }}>
+      <div className="left">
+        <button className="add" onClick={addNote}>Add Note</button>
 
         {notes.map((item, index) => {
           return (
@@ -43,10 +43,11 @@ function App() {
           );
         })}
       </div>
-      <div>
+      <div className="right" >
         {currentEditing != null ? (
           <MarkdownEditor
-            height="200px"
+            height="100%"
+            width="100%"
             onChange={(value, viewUpdate) => {
               let newValue = value;
               let localCopy = [...notes];

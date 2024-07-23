@@ -7,10 +7,10 @@ export default function NoteCard({
   deleteNote,
 }) {
   return (
-    <div>
-      <div style={{ display: "flex", gap: "10px" }}>
+    <div className="card">
+      <div className="title" style={{ display: "flex", gap: "10px" }}>
         <h2 className="temp" onClick={() => setCurrentEditing(index)}>
-          {title.substr(0, 20)}....
+          {title.substr(0, 10)}....
         </h2>
         <button onClick={() => deleteNote(index)}>Delete</button>
       </div>
